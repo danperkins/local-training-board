@@ -1,0 +1,6 @@
+**/node_modules/**
+server/node_modules/
+server/.serverless/
+server/dist
+**/yarn-error.log
+__IGNORE__

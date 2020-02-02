@@ -1,0 +1,16 @@
+service: local-training-board-server
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  banana:
+    handler: ./dist/hello.handler
+    events:
+      - http:
+          path: hello
+          method: get
+          cors: true

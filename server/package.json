@@ -1,0 +1,18 @@
+{
+  "name": "local-training-board-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "npm run build && sls deploy --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.40",
+    "aws-lambda": "^1.0.5",
+    "serverless": "^1.62.0",
+    "typescript": "^3.7.5"
+  }
+}
