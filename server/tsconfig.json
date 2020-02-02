@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "typeRoots": ["node_modules/@types"],
+    "strict": true,
+    "inlineSourceMap": true
+  }
+}
