@@ -2,5 +2,6 @@
 server/node_modules/
 server/.serverless/
 server/dist
+client/src/secret/
 **/yarn-error.log
 __IGNORE__
