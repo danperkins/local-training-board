@@ -14,3 +14,31 @@ functions:
           path: hello
           method: get
           cors: true
+  ifttt:
+    handler: ./dist/ifttt.handler
+    events:
+      - http:
+          path: ifttt/v1/status
+          method: get
+          cors: true
+  iftttuser:
+    handler: ./dist/iftttuserinfo.handler
+    events:
+      - http:
+          path: ifttt/v1/user/info
+          method: get
+          cors: true
+  dptesttrigger:
+    handler: ./dist/dptesttrigger.handler
+    events:
+      - http:
+          path: ifttt/v1/triggers/dptest
+          method: post
+          cors: true
+  testsetup:
+    handler: ./dist/testsetup.handler
+    events:
+      - http:
+          path: ifttt/v1/test/setup
+          method: post
+          cors: true

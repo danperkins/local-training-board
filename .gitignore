@@ -5,3 +5,4 @@ server/dist
 client/src/secret/
 **/yarn-error.log
 __IGNORE__
+**/secrets.ts
