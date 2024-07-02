@@ -1,0 +1,23 @@
+name: Hatchling Patch Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      wasm_version:
+        description: "WASM version: target WASM version to bundle with Hatchling UX. This should almost always match the WASM version corresponding to the target deploy environment in duckdb_version_range/0.10-plus/manifest"
+        required: true
+        type: string
+jobs:
+  build:
+    name: "Build Hatchling Web App"
+    runs-on: x86-runners-default
+
+    steps:
+
+      # We need the submodules to compile the wasm extension
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          sha: ${{ github.sha }}
+          submodules: recursive
+          fetch-depth: 0
