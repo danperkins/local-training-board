@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     name: "Build Hatchling Web App"
-    runs-on: x86-runners-default
+    runs-on: ubuntu-latest
 
     steps:
 
