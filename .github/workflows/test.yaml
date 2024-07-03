@@ -17,5 +17,6 @@ jobs:
       # We need the submodules to compile the wasm extension
       - uses: actions/checkout@v4
         with:
+          sha: "e59fc50109c272b5c1b9f23c2ba31cc0c7090021"
           submodules: recursive
           fetch-depth: 0
