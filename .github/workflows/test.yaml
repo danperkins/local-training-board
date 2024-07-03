@@ -17,7 +17,6 @@ jobs:
       # We need the submodules to compile the wasm extension
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_TOKEN }}
           sha: ${{ github.sha }}
           submodules: recursive
           fetch-depth: 0
