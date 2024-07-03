@@ -20,3 +20,9 @@ jobs:
           sha: "e59fc50109c272b5c1b9f23c2ba31cc0c7090021"
           submodules: recursive
           fetch-depth: 0
+
+      - name: Version Check
+        shell: bash
+        run: |
+          git --version
+          git log -2
